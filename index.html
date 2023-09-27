@@ -28,20 +28,21 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
         <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     </head>
     <body>
         <header>
-            <div class="header-main">
+            <div class="header-main container">
                 <div class="left-header">
                     <a href="index.html" class="logo"
                         ><i data-feather="play"></i
                     ></a>
                     <a class="site-title">Music Player</a>
-                    <a class="favourites">Favourites</a>
+                    <a class="favourites hide-tablet">Favourites</a>
                 </div>
                 <div class="right-header">
-                    <div class="search-sec">
+                    <div class="search-sec hide-tablet">
                         <input
                             type="text"
                             name=""
@@ -54,23 +55,409 @@
                     <a class="notification cursor-pointer">
                         <i data-feather="bell"></i>
                     </a>
-                    <a class="user-icon">
+                    <a class="user-icon hide-tablet">
                         <img src="./assets/images/user-default.png" />
                     </a>
+                    <div class="tablet-menu hide-desktop">
+                        <div class="tablet-icon">
+                            <input
+                                type="checkbox"
+                                id="menu-check"
+                                class="latest-more-btn"
+                            />
+                            <i data-feather="align-justify"></i>
+                            <aside class="aside-menu hide-desktop">
+                                <div class="user-section">
+                                    <a class="user-icon">
+                                        <img
+                                            src="./assets/images/user-default.png"
+                                        />
+                                    </a>
+                                </div>
+                                <div class="menu">
+                                    <div class="menu-item">
+                                        <a class="favourites">Favourites</a>
+                                    </div>
+                                    <div class="menu-item search-sec">
+                                        <input
+                                            type="text"
+                                            name=""
+                                            id=""
+                                            class="search"
+                                            placeholder="Search"
+                                        />
+                                        <i data-feather="mic"></i>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
-        <div class="main">
-            <div class="content">
-                <div class="banner-sec">
-                    <div class="banner banner-first"></div>
-                    <div class="banner banner-middle"></div>
-                    <div class="banner banner-last"></div>
+        <div class="container">
+            <div class="main">
+                <div class="content">
+                    <div class="banner-sec">
+                        <div class="banner banner-first"></div>
+                        <div class="banner banner-middle"></div>
+                        <div class="banner banner-last"></div>
+                    </div>
+                    <div class="latest-content">
+                        <h3 class="latest-title">Latest Release</h3>
+                        <div class="all-latest">
+                            <div class="single-latest">
+                                <div class="queue-content">
+                                    <div class="content-left">
+                                        <img
+                                            src="./assets/images/tt-lover-cover.png"
+                                        />
+                                    </div>
+                                    <div class="content-middle">
+                                        <a class="song-title">Lover</a>
+                                        <a class="song-artist"
+                                            >August 23, 2019</a
+                                        >
+                                    </div>
+                                    <div class="content-last">
+                                        <input
+                                            type="checkbox"
+                                            name=""
+                                            id="latest-button-1"
+                                            class="latest-more-btn"
+                                        />
+                                        <i data-feather="more-horizontal"></i>
+                                        <div class="song-time">3:14 min</div>
+                                        <div
+                                            class="latest-options"
+                                            id="latest-option-1"
+                                        >
+                                            <ul>
+                                                <li>
+                                                    <a
+                                                        ><i
+                                                            data-feather="play"
+                                                        ></i>
+                                                        Play Now</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        ><i
+                                                            data-feather="plus"
+                                                        ></i>
+                                                        Add to Queue</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        ><i
+                                                            data-feather="folder-plus"
+                                                        ></i>
+                                                        Add to Favourite</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        ><i
+                                                            data-feather="info"
+                                                        ></i>
+                                                        Get Info</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-latest">
+                                <div class="queue-content">
+                                    <div class="content-left">
+                                        <img
+                                            src="./assets/images/tt-lover-cover.png"
+                                        />
+                                    </div>
+                                    <div class="content-middle">
+                                        <a class="song-title">ME</a>
+                                        <a class="song-artist"
+                                            >August 23, 2019</a
+                                        >
+                                    </div>
+                                    <div class="content-last">
+                                        <input
+                                            type="checkbox"
+                                            name=""
+                                            id="latest-button-2"
+                                            class="latest-more-btn"
+                                        />
+                                        <i data-feather="more-horizontal"></i>
+                                        <div class="song-time">3:14 min</div>
+                                        <div
+                                            class="latest-options"
+                                            id="latest-option-2"
+                                        >
+                                            <ul>
+                                                <li>
+                                                    <a
+                                                        ><i
+                                                            data-feather="play"
+                                                        ></i>
+                                                        Play Now</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        ><i
+                                                            data-feather="plus"
+                                                        ></i>
+                                                        Add to Queue</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        ><i
+                                                            data-feather="folder-plus"
+                                                        ></i>
+                                                        Add to Favourite</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        ><i
+                                                            data-feather="info"
+                                                        ></i>
+                                                        Get Info</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-latest">
+                                <div class="queue-content">
+                                    <div class="content-left">
+                                        <img
+                                            src="./assets/images/Alan_Walker_The_Spectre.jpg"
+                                        />
+                                    </div>
+                                    <div class="content-middle">
+                                        <a class="song-title">The Spector</a>
+                                        <a class="song-artist"
+                                            >August 23, 2019</a
+                                        >
+                                    </div>
+                                    <div class="content-last">
+                                        <input
+                                            type="checkbox"
+                                            name=""
+                                            id="latest-button-3"
+                                            class="latest-more-btn"
+                                        />
+                                        <i data-feather="more-horizontal"></i>
+                                        <div class="song-time">3:14 min</div>
+                                        <div
+                                            class="latest-options"
+                                            id="latest-option-3"
+                                        >
+                                            <ul>
+                                                <li>
+                                                    <a
+                                                        ><i
+                                                            data-feather="play"
+                                                        ></i>
+                                                        Play Now</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        ><i
+                                                            data-feather="plus"
+                                                        ></i>
+                                                        Add to Queue</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        ><i
+                                                            data-feather="folder-plus"
+                                                        ></i>
+                                                        Add to Favourite</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        ><i
+                                                            data-feather="info"
+                                                        ></i>
+                                                        Get Info</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-latest">
+                                <div class="queue-content">
+                                    <div class="content-left">
+                                        <img
+                                            src="./assets/images/K-391_Ignite.png"
+                                        />
+                                    </div>
+                                    <div class="content-middle">
+                                        <a class="song-title">Ignite</a>
+                                        <a class="song-artist"
+                                            >August 23, 2019</a
+                                        >
+                                    </div>
+                                    <div class="content-last">
+                                        <input
+                                            type="checkbox"
+                                            name=""
+                                            id="latest-button-4"
+                                            class="latest-more-btn"
+                                        />
+                                        <i data-feather="more-horizontal"></i>
+                                        <div class="song-time">3:14 min</div>
+                                        <div
+                                            class="latest-options"
+                                            id="latest-option-4"
+                                        >
+                                            <ul>
+                                                <li>
+                                                    <a
+                                                        ><i
+                                                            data-feather="play"
+                                                        ></i>
+                                                        Play Now</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        ><i
+                                                            data-feather="plus"
+                                                        ></i>
+                                                        Add to Queue</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        ><i
+                                                            data-feather="folder-plus"
+                                                        ></i>
+                                                        Add to Favourite</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        ><i
+                                                            data-feather="info"
+                                                        ></i>
+                                                        Get Info</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latest-content">
+                        <h3 class="latest-title">Popular Artists</h3>
+                        <div class="all-latest">
+                            <figure class="single-artist">
+                                <img
+                                    src="./assets/images/artists/the-weekend.jpg"
+                                />
+                                <div class="play">
+                                    <a>
+                                        <i data-feather="play"></i>
+                                    </a>
+                                </div>
+                                <figcaption>The Weekend</figcaption>
+                            </figure>
+                            <figure class="single-artist">
+                                <img
+                                    src="./assets/images/artists/taylor-swift.jpg"
+                                />
+                                <div class="play">
+                                    <a>
+                                        <i data-feather="play"></i>
+                                    </a>
+                                </div>
+                                <figcaption>Taylor Swift</figcaption>
+                            </figure>
+                            <figure class="single-artist">
+                                <img
+                                    src="./assets/images/artists/miley-cyrus.jpeg"
+                                />
+                                <div class="play">
+                                    <a>
+                                        <i data-feather="play"></i>
+                                    </a>
+                                </div>
+                                <figcaption>Miley Cyrus</figcaption>
+                            </figure>
+                            <figure class="single-artist">
+                                <img
+                                    src="./assets/images/artists/rihanna.jpg"
+                                />
+                                <div class="play">
+                                    <a>
+                                        <i data-feather="play"></i>
+                                    </a>
+                                </div>
+                                <figcaption>Rihanna</figcaption>
+                            </figure>
+                            <figure class="single-artist">
+                                <img
+                                    src="./assets/images/artists/shakira.jpg"
+                                />
+                                <div class="play">
+                                    <a>
+                                        <i data-feather="play"></i>
+                                    </a>
+                                </div>
+                                <figcaption>Shakira</figcaption>
+                            </figure>
+                            <figure class="single-artist">
+                                <img
+                                    src="./assets/images/artists/ed-sheeran.jpg"
+                                />
+                                <div class="play">
+                                    <a>
+                                        <i data-feather="play"></i>
+                                    </a>
+                                </div>
+                                <figcaption>Ed Sheeran</figcaption>
+                            </figure>
+                        </div>
+                    </div>
                 </div>
-                <div class="latest-content">
-                    <h3 class="latest-title">Latest Release</h3>
-                    <div class="all-latest">
-                        <div class="single-latest">
+                <div class="right-side-bar">
+                    <div class="queue">
+                        <div class="title-sec">
+                            <div class="left"><a>Queue</a></div>
+                            <div class="right">
+                                <a>
+                                    <input
+                                        type="checkbox"
+                                        name=""
+                                        id="button"
+                                    />
+                                    <i data-feather="chevron-down"></i>
+                                    <div id="queue-options">
+                                        <ul>
+                                            <li>Playlist</li>
+                                            <li>Favourite Songs</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="queue-content-sec">
                             <div class="queue-content">
                                 <div class="content-left">
                                     <img
@@ -79,24 +466,12 @@
                                 </div>
                                 <div class="content-middle">
                                     <a class="song-title">Lover</a>
-                                    <a class="song-artist">August 23, 2019</a>
+                                    <a class="song-artist">Taylor Swift</a>
                                 </div>
                                 <div class="content-last">
-                                    <input type="checkbox" name="" id="latest-button-1" class="latest-more-btn" />
-                                    <i data-feather="more-horizontal"></i>
-                                    <div class="song-time">3:14 min</div>
-                                    <div class="latest-options" id="latest-option-1">
-                                        <ul>
-                                            <li><a><i data-feather="play"></i> Play Now</a></li>
-                                            <li><a><i data-feather="plus"></i> Add to Queue</a></li>
-                                            <li><a><i data-feather="folder-plus"></i> Add to Favourite</a></li>
-                                            <li><a><i data-feather="info"></i> Get Info</a></li>
-                                        </ul>
-                                    </div>
+                                    <i data-feather="heart"></i>
                                 </div>
                             </div>
-                        </div>
-                        <div class="single-latest">
                             <div class="queue-content">
                                 <div class="content-left">
                                     <img
@@ -104,25 +479,13 @@
                                     />
                                 </div>
                                 <div class="content-middle">
-                                    <a class="song-title">ME</a>
-                                    <a class="song-artist">August 23, 2019</a>
+                                    <a class="song-title">Me</a>
+                                    <a class="song-artist">Taylor Swift</a>
                                 </div>
                                 <div class="content-last">
-                                    <input type="checkbox" name="" id="latest-button-2" class="latest-more-btn" />
-                                    <i data-feather="more-horizontal"></i>
-                                    <div class="song-time">3:14 min</div>
-                                    <div class="latest-options" id="latest-option-2">
-                                        <ul>
-                                            <li><a><i data-feather="play"></i> Play Now</a></li>
-                                            <li><a><i data-feather="plus"></i> Add to Queue</a></li>
-                                            <li><a><i data-feather="folder-plus"></i> Add to Favourite</a></li>
-                                            <li><a><i data-feather="info"></i> Get Info</a></li>
-                                        </ul>
-                                    </div>
+                                    <i data-feather="heart"></i>
                                 </div>
                             </div>
-                        </div>
-                        <div class="single-latest">
                             <div class="queue-content">
                                 <div class="content-left">
                                     <img
@@ -131,24 +494,12 @@
                                 </div>
                                 <div class="content-middle">
                                     <a class="song-title">The Spector</a>
-                                    <a class="song-artist">August 23, 2019</a>
+                                    <a class="song-artist">Alan Walker</a>
                                 </div>
                                 <div class="content-last">
-                                    <input type="checkbox" name="" id="latest-button-3" class="latest-more-btn" />
-                                    <i data-feather="more-horizontal"></i>
-                                    <div class="song-time">3:14 min</div>
-                                    <div class="latest-options" id="latest-option-3">
-                                        <ul>
-                                            <li><a><i data-feather="play"></i> Play Now</a></li>
-                                            <li><a><i data-feather="plus"></i> Add to Queue</a></li>
-                                            <li><a><i data-feather="folder-plus"></i> Add to Favourite</a></li>
-                                            <li><a><i data-feather="info"></i> Get Info</a></li>
-                                        </ul>
-                                    </div>
+                                    <i data-feather="heart"></i>
                                 </div>
                             </div>
-                        </div>
-                        <div class="single-latest">
                             <div class="queue-content">
                                 <div class="content-left">
                                     <img
@@ -157,163 +508,18 @@
                                 </div>
                                 <div class="content-middle">
                                     <a class="song-title">Ignite</a>
-                                    <a class="song-artist">August 23, 2019</a>
+                                    <a class="song-artist">Alan Walker</a>
                                 </div>
                                 <div class="content-last">
-                                    <input type="checkbox" name="" id="latest-button-4" class="latest-more-btn" />
-                                    <i data-feather="more-horizontal"></i>
-                                    <div class="song-time">3:14 min</div>
-                                    <div class="latest-options" id="latest-option-4">
-                                        <ul>
-                                            <li><a><i data-feather="play"></i> Play Now</a></li>
-                                            <li><a><i data-feather="plus"></i> Add to Queue</a></li>
-                                            <li><a><i data-feather="folder-plus"></i> Add to Favourite</a></li>
-                                            <li><a><i data-feather="info"></i> Get Info</a></li>
-                                        </ul>
-                                    </div>
+                                    <i data-feather="heart"></i>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="latest-content">
-                    <h3 class="latest-title">Popular Artists</h3>
-                    <div class="all-latest">
-                        <figure class="single-artist">
-                            <img
-                                src="./assets/images/artists/the-weekend.jpg"
-                            />
-                            <div class="play">
-                                <a>
-                                    <i data-feather="play"></i>
-                                </a>
-                            </div>
-                            <figcaption>The Weekend</figcaption>
-                        </figure>
-                        <figure class="single-artist">
-                            <img
-                                src="./assets/images/artists/taylor-swift.jpg"
-                            />
-                            <div class="play">
-                                <a>
-                                    <i data-feather="play"></i>
-                                </a>
-                            </div>
-                            <figcaption>Taylor Swift</figcaption>
-                        </figure>
-                        <figure class="single-artist">
-                            <img
-                                src="./assets/images/artists/miley-cyrus.jpeg"
-                            />
-                            <div class="play">
-                                <a>
-                                    <i data-feather="play"></i>
-                                </a>
-                            </div>
-                            <figcaption>Miley Cyrus</figcaption>
-                        </figure>
-                        <figure class="single-artist">
-                            <img src="./assets/images/artists/rihanna.jpg" />
-                            <div class="play">
-                                <a>
-                                    <i data-feather="play"></i>
-                                </a>
-                            </div>
-                            <figcaption>Rihanna</figcaption>
-                        </figure>
-                        <figure class="single-artist">
-                            <img src="./assets/images/artists/shakira.jpg" />
-                            <div class="play">
-                                <a>
-                                    <i data-feather="play"></i>
-                                </a>
-                            </div>
-                            <figcaption>Shakira</figcaption>
-                        </figure>
-                        <figure class="single-artist">
-                            <img src="./assets/images/artists/ed-sheeran.jpg" />
-                            <div class="play">
-                                <a>
-                                    <i data-feather="play"></i>
-                                </a>
-                            </div>
-                            <figcaption>Ed Sheeran</figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-            <div class="right-side-bar">
-                <div class="queue">
-                    <div class="title-sec">
-                        <div class="left"><a>Queue</a></div>
-                        <div class="right">
-                            <a>
-                                <input type="checkbox" name="" id="button" />
-                                <i data-feather="chevron-down"></i>
-                                <div id="queue-options">
-                                    <ul>
-                                        <li>Playlist</li>
-                                        <li>Favourite Songs</li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="queue-content-sec">
-                        <div class="queue-content">
-                            <div class="content-left">
-                                <img src="./assets/images/tt-lover-cover.png" />
-                            </div>
-                            <div class="content-middle">
-                                <a class="song-title">Lover</a>
-                                <a class="song-artist">Taylor Swift</a>
-                            </div>
-                            <div class="content-last">
-                                <i data-feather="heart"></i>
-                            </div>
-                        </div>
-                        <div class="queue-content">
-                            <div class="content-left">
-                                <img src="./assets/images/tt-lover-cover.png" />
-                            </div>
-                            <div class="content-middle">
-                                <a class="song-title">Me</a>
-                                <a class="song-artist">Taylor Swift</a>
-                            </div>
-                            <div class="content-last">
-                                <i data-feather="heart"></i>
-                            </div>
-                        </div>
-                        <div class="queue-content">
-                            <div class="content-left">
-                                <img
-                                    src="./assets/images/Alan_Walker_The_Spectre.jpg"
-                                />
-                            </div>
-                            <div class="content-middle">
-                                <a class="song-title">The Spector</a>
-                                <a class="song-artist">Alan Walker</a>
-                            </div>
-                            <div class="content-last">
-                                <i data-feather="heart"></i>
-                            </div>
-                        </div>
-                        <div class="queue-content">
-                            <div class="content-left">
-                                <img src="./assets/images/K-391_Ignite.png" />
-                            </div>
-                            <div class="content-middle">
-                                <a class="song-title">Ignite</a>
-                                <a class="song-artist">Alan Walker</a>
-                            </div>
-                            <div class="content-last">
-                                <i data-feather="heart"></i>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <script>
             feather.replace();
         </script>

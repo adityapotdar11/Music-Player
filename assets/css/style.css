@@ -23,10 +23,10 @@ body {
     height: 2.5rem;
 }
 header {
-    padding: 1rem;
     background-color: #222222;
 }
 .header-main {
+    padding: 1rem;
     display: flex;
 }
 .header-main .left-header {
@@ -302,6 +302,9 @@ header .site-title {
 .single-latest .content-last {
     position: relative;
 }
+.single-latest .queue-content{
+    padding-bottom: 0;
+}
 
 .latest-options {
     position: absolute;
@@ -380,5 +383,8 @@ header .site-title {
     height: 2rem;
     width: 2rem;
 }
-
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
 /* Artist CSS End */
