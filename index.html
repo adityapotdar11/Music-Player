@@ -7,19 +7,19 @@
         <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="./assets/images/play-button-arrowhead.png"
+            href="./assets/images/play.svg"
         />
         <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="./assets/images/play-button-arrowhead.png"
+            href="./assets/images/play.svg"
         />
         <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="./assets/images/play-button-arrowhead.png"
+            href="./assets/images/play.svg"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -51,7 +51,7 @@
                         />
                         <i data-feather="mic"></i>
                     </div>
-                    <a class="notification">
+                    <a class="notification cursor-pointer">
                         <i data-feather="bell"></i>
                     </a>
                     <a class="user-icon">
@@ -82,8 +82,17 @@
                                     <a class="song-artist">August 23, 2019</a>
                                 </div>
                                 <div class="content-last">
+                                    <input type="checkbox" name="" id="latest-button-1" class="latest-more-btn" />
                                     <i data-feather="more-horizontal"></i>
                                     <div class="song-time">3:14 min</div>
+                                    <div class="latest-options" id="latest-option-1">
+                                        <ul>
+                                            <li><a><i data-feather="play"></i> Play Now</a></li>
+                                            <li><a><i data-feather="plus"></i> Add to Queue</a></li>
+                                            <li><a><i data-feather="folder-plus"></i> Add to Favourite</a></li>
+                                            <li><a><i data-feather="info"></i> Get Info</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -99,8 +108,17 @@
                                     <a class="song-artist">August 23, 2019</a>
                                 </div>
                                 <div class="content-last">
+                                    <input type="checkbox" name="" id="latest-button-2" class="latest-more-btn" />
                                     <i data-feather="more-horizontal"></i>
                                     <div class="song-time">3:14 min</div>
+                                    <div class="latest-options" id="latest-option-2">
+                                        <ul>
+                                            <li><a><i data-feather="play"></i> Play Now</a></li>
+                                            <li><a><i data-feather="plus"></i> Add to Queue</a></li>
+                                            <li><a><i data-feather="folder-plus"></i> Add to Favourite</a></li>
+                                            <li><a><i data-feather="info"></i> Get Info</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -116,8 +134,17 @@
                                     <a class="song-artist">August 23, 2019</a>
                                 </div>
                                 <div class="content-last">
+                                    <input type="checkbox" name="" id="latest-button-3" class="latest-more-btn" />
                                     <i data-feather="more-horizontal"></i>
                                     <div class="song-time">3:14 min</div>
+                                    <div class="latest-options" id="latest-option-3">
+                                        <ul>
+                                            <li><a><i data-feather="play"></i> Play Now</a></li>
+                                            <li><a><i data-feather="plus"></i> Add to Queue</a></li>
+                                            <li><a><i data-feather="folder-plus"></i> Add to Favourite</a></li>
+                                            <li><a><i data-feather="info"></i> Get Info</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -133,8 +160,17 @@
                                     <a class="song-artist">August 23, 2019</a>
                                 </div>
                                 <div class="content-last">
+                                    <input type="checkbox" name="" id="latest-button-4" class="latest-more-btn" />
                                     <i data-feather="more-horizontal"></i>
                                     <div class="song-time">3:14 min</div>
+                                    <div class="latest-options" id="latest-option-4">
+                                        <ul>
+                                            <li><a><i data-feather="play"></i> Play Now</a></li>
+                                            <li><a><i data-feather="plus"></i> Add to Queue</a></li>
+                                            <li><a><i data-feather="folder-plus"></i> Add to Favourite</a></li>
+                                            <li><a><i data-feather="info"></i> Get Info</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -144,27 +180,63 @@
                     <h3 class="latest-title">Popular Artists</h3>
                     <div class="all-latest">
                         <figure class="single-artist">
-                            <img src="./assets/images/artists/the-weekend.jpg">
+                            <img
+                                src="./assets/images/artists/the-weekend.jpg"
+                            />
+                            <div class="play">
+                                <a>
+                                    <i data-feather="play"></i>
+                                </a>
+                            </div>
                             <figcaption>The Weekend</figcaption>
                         </figure>
                         <figure class="single-artist">
-                            <img src="./assets/images/artists/taylor-swift.jpg">
+                            <img
+                                src="./assets/images/artists/taylor-swift.jpg"
+                            />
+                            <div class="play">
+                                <a>
+                                    <i data-feather="play"></i>
+                                </a>
+                            </div>
                             <figcaption>Taylor Swift</figcaption>
                         </figure>
                         <figure class="single-artist">
-                            <img src="./assets/images/artists/miley-cyrus.jpeg">
+                            <img
+                                src="./assets/images/artists/miley-cyrus.jpeg"
+                            />
+                            <div class="play">
+                                <a>
+                                    <i data-feather="play"></i>
+                                </a>
+                            </div>
                             <figcaption>Miley Cyrus</figcaption>
                         </figure>
                         <figure class="single-artist">
-                            <img src="./assets/images/artists/rihanna.jpg">
+                            <img src="./assets/images/artists/rihanna.jpg" />
+                            <div class="play">
+                                <a>
+                                    <i data-feather="play"></i>
+                                </a>
+                            </div>
                             <figcaption>Rihanna</figcaption>
                         </figure>
                         <figure class="single-artist">
-                            <img src="./assets/images/artists/shakira.jpg">
+                            <img src="./assets/images/artists/shakira.jpg" />
+                            <div class="play">
+                                <a>
+                                    <i data-feather="play"></i>
+                                </a>
+                            </div>
                             <figcaption>Shakira</figcaption>
                         </figure>
                         <figure class="single-artist">
-                            <img src="./assets/images/artists/ed-sheeran.jpg">
+                            <img src="./assets/images/artists/ed-sheeran.jpg" />
+                            <div class="play">
+                                <a>
+                                    <i data-feather="play"></i>
+                                </a>
+                            </div>
                             <figcaption>Ed Sheeran</figcaption>
                         </figure>
                     </div>
@@ -175,7 +247,16 @@
                     <div class="title-sec">
                         <div class="left"><a>Queue</a></div>
                         <div class="right">
-                            <a><i data-feather="chevron-down"></i></a>
+                            <a>
+                                <input type="checkbox" name="" id="button" />
+                                <i data-feather="chevron-down"></i>
+                                <div id="queue-options">
+                                    <ul>
+                                        <li>Playlist</li>
+                                        <li>Favourite Songs</li>
+                                    </ul>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="queue-content-sec">

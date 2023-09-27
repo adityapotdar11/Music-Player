@@ -1,3 +1,4 @@
+/* Global CSS Start */
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,12 @@ body {
     color: #ffffff;
     font-family: "Poppins", sans-serif;
 }
+.cursor-pointer {
+    cursor: pointer;
+}
+/* Global CSS End */
+
+/* Header CSS Start */
 .logo .feather {
     color: #ffffff;
     width: 2.5rem;
@@ -72,6 +79,12 @@ header .site-title {
 .user-icon {
     border-radius: 50%;
 }
+.notification .feather {
+    fill: #ffffff;
+}
+/* Header CSS End */
+
+/* Content CSS Start */
 .main {
     display: flex;
     gap: 1rem;
@@ -84,6 +97,9 @@ header .site-title {
 .right-side-bar {
     width: 25%;
 }
+/* Content CSS End */
+
+/* Queue CSS Start */
 .queue {
     padding: 0 0.5rem;
 }
@@ -96,9 +112,42 @@ header .site-title {
     font-size: 1.5rem;
     font-weight: 500;
 }
+.queue .title-sec .right a {
+    position: relative;
+}
+.queue .title-sec .right a #button {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
+}
 .queue .title-sec .right a .feather {
     width: 2rem;
     height: 2rem;
+}
+#button:checked ~ #queue-options {
+    display: block;
+}
+#queue-options {
+    position: absolute;
+    left: -7rem;
+    width: 9rem;
+    border-radius: 4px;
+    background-color: #222222;
+    display: none;
+}
+#queue-options ul {
+    list-style: none;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+#queue-options ul li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #333333;
+}
+#queue-options ul li:last-child {
+    border: none;
 }
 .queue-content-sec {
     padding-top: 1rem;
@@ -136,6 +185,14 @@ header .site-title {
     stroke: green;
     fill: green;
 }
+.queue-content .content-left:hover {
+    opacity: 0.8;
+}
+.queue-content .content-left,
+.queue-content .content-middle .song-title,
+.queue-content .content-middle .song-artist {
+    cursor: pointer;
+}
 .song-title,
 .song-artist {
     display: block;
@@ -146,6 +203,9 @@ header .site-title {
     font-weight: 500;
 }
 
+/* Queue CSS End */
+
+/* Banner CSS Start */
 .banner-sec {
     display: flex;
     align-items: center;
@@ -200,6 +260,9 @@ header .site-title {
     background-image: url("../images/last-banner.webp");
     filter: drop-shadow(0 0 0.5rem rgb(0, 38, 255));
 }
+/* Banner CSS End */
+
+/* Latest CSS Start */
 .all-latest {
     display: flex;
     align-items: center;
@@ -229,17 +292,93 @@ header .site-title {
 .latest-content {
     padding-top: 1rem;
 }
-.single-artist{
+.latest-more-btn {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.single-latest .content-last {
+    position: relative;
+}
+
+.latest-options {
+    position: absolute;
+    right: 0;
+    top: 2rem;
+    width: 12rem;
+    border-radius: 4px;
+    background-color: #333333;
+    z-index: 7;
+    display: none;
+}
+.latest-options ul {
+    list-style: none;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+}
+.latest-options ul li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #444444;
+}
+.latest-options ul li a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.latest-options ul li:last-child {
+    border: none;
+}
+
+#latest-button-4:checked ~ #latest-option-4,
+#latest-button-3:checked ~ #latest-option-3,
+#latest-button-2:checked ~ #latest-option-2,
+#latest-button-1:checked ~ #latest-option-1 {
+    display: block;
+}
+/* Latest CSS End */
+
+/* Artist CSS Start */
+.single-artist {
     width: 15%;
     margin: 1.5% 0;
     cursor: pointer;
+    position: relative;
 }
-.single-artist img{
+.single-artist img {
     border-radius: 50%;
     width: 100%;
 }
-.single-artist figcaption{
+.single-artist figcaption {
     text-align: center;
     padding-top: 1rem;
     font-size: 1rem;
 }
+
+.single-artist .play {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+.single-artist .play:hover {
+    opacity: 1;
+}
+.single-artist .play a {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+}
+
+.single-artist .play a .feather {
+    height: 2rem;
+    width: 2rem;
+}
+
+/* Artist CSS End */
