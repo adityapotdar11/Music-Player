@@ -302,7 +302,7 @@ header .site-title {
 .single-latest .content-last {
     position: relative;
 }
-.single-latest .queue-content{
+.single-latest .queue-content {
     padding-bottom: 0;
 }
 
@@ -335,12 +335,10 @@ header .site-title {
     border: none;
 }
 
-#latest-button-4:checked ~ #latest-option-4,
-#latest-button-3:checked ~ #latest-option-3,
-#latest-button-2:checked ~ #latest-option-2,
-#latest-button-1:checked ~ #latest-option-1 {
+.latest-more-btn:checked ~ .latest-options {
     display: block;
 }
+
 /* Latest CSS End */
 
 /* Artist CSS Start */
@@ -383,7 +381,7 @@ header .site-title {
     height: 2rem;
     width: 2rem;
 }
-.container{
+.container {
     max-width: 1200px;
     margin: auto;
 }
